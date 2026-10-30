@@ -27,13 +27,13 @@ Nesta Sprint foram adicionados:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/Engenheiros-Digitais/sprint4-react.git
+   git clone https://github.com/Engenheiros-Digitais/sp4-web-front.git
 ```
 
 Entre na pasta do projeto:
 
 ```bash
-cd sprint4-react
+cd sp4-web-front.git
 ```
 
 Instale as dependências:
