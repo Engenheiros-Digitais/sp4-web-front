@@ -2,7 +2,7 @@
 
    ## Sobre o projeto
 
-Evolução do projeto JOVI Vision AI desenvolvido na Sprint 3. A Landing Page (HTML/CSS) foi integrada ao React, estilizada com Tailwind CSS e é responsiva para Desktop, Tablet e Mobile.
+Evolução do projeto JOVI Vision AI que foi desenvolvido na Sprint 3. A Landing Page (HTML/CSS) foi integrada ao React, estilizada com Tailwind CSS e é responsiva para Desktop, Tablet e Mobile.
 
 Nesta Sprint foram adicionados:
 
@@ -28,22 +28,22 @@ Abra o Terminal Git Bash;
 
 Clone o repositório: Entre na pasta do projeto: Instale as dependências. Utilizando os seguintes comandos;
 
-´´´´
+````
 git clone https://github.com/Engenheiros-Digitais/sp4-web-front.git
 
 cd sp4-web-front.git
 
 npm install
-´´´´
+````
 
 
    ## Como executar o projeto
 
 Após instalar as dependências, rode:
 
-´´´´
+````
 npm run dev
-´´´´
+````
 
 E abra no navegador o endereço mostrado no terminal.
 

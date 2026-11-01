@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { AuthContext } from './AuthContext';
 
 export function AuthProvider({ children }) {
-  // Começa com o usuário salvo no navegador (se existir)
   const [usuario, setUsuario] = useState(localStorage.getItem('usuarioLogado') || '');
 
   const login = (nome) => {

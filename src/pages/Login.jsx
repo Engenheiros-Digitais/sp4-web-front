@@ -9,7 +9,6 @@ function Login() {
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  
   const handleLogin = (e) => {
     e.preventDefault();
     const nomeLimpo = nome.trim();
@@ -27,7 +26,7 @@ function Login() {
     if (confSenha !== senha) {
     alert("Erro: As senhas precisam ser iguais!");
     return;
-  }
+    }
 
     const nomeFormatado = nomeLimpo.toUpperCase();
     login(nomeFormatado);
