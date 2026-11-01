@@ -23,6 +23,9 @@ function FlashSimulator() {
       <p className="text-lg font-bold">
         💡 Brilho recomendado da tela: <span className="text-jovi">{brilho}%</span>
       </p>
+      <a href="/#desafio" className="rounded-full bg-jovi px-6 py-2 font-semibold text-white hover:scale-105">
+        Voltar ao inicio 
+      </a>
     </section>
   );
 }

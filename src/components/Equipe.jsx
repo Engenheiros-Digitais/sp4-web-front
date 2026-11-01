@@ -3,7 +3,6 @@ import { API_URL } from '../services/api';
 import MembroCard from './MembroCard';
 
 function Equipe() {
-  // Os integrantes vêm da API (MockAPI)
   const { dados: membros, carregando, erro } = useFetch(`${API_URL}/membros`);
 
   return (

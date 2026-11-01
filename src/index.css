@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Cor principal do projeto (mesma da Sprint 3) */
 @theme {
   --color-jovi: #0057ff;
   --color-fundo: #e4f2ff;

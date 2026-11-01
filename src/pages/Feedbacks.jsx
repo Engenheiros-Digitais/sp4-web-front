@@ -8,7 +8,6 @@ function Feedbacks() {
   const { dados: feedbacks, setDados: setFeedbacks, carregando, erro } = useFetch(`${API_URL}/feedbacks`);
   const [mensagem, setMensagem] = useState('');
 
-  // Envia um novo feedback para a API (POST)
   const enviarFeedback = (e) => {
     e.preventDefault();
 

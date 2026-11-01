@@ -1,13 +1,13 @@
 import useSlideshow from '../hooks/useSlideshow';
 
 const imagens = [
-  { src: '/images/galeria/flash-frontal.png', alt: 'Foto com o Flash Frontal' },
   { src: '/images/galeria/ia-ativacao.png', alt: 'Foto da ativação da IA' },
+  { src: '/images/galeria/flash-frontal.png', alt: 'Foto com o Flash Frontal' },
   { src: '/images/galeria/ia-original.png', alt: 'Foto original, sem melhorias aplicadas' },
+  { src: '/images/galeria/ia-nitidez.png', alt: 'Melhoria na nitidez' },
   { src: '/images/galeria/ia-cores.png', alt: 'Melhoria na qualidade das cores' },
   { src: '/images/galeria/ia-fundo.png', alt: 'Melhoria no fundo' },
   { src: '/images/galeria/ia-fundo-cores.png', alt: 'Melhoria no fundo e nas cores' },
-  { src: '/images/galeria/ia-nitidez.png', alt: 'Melhoria na nitidez' },
 ];
 
 function Galeria() {
@@ -21,7 +21,7 @@ function Galeria() {
       <div className="mt-8 flex items-center justify-center gap-3">
         <button onClick={anterior} className="shrink-0 rounded-full bg-jovi px-4 py-2 text-white">‹</button>
         <img
-          className="aspect-video min-w-0 max-w-2xl flex-1 rounded-xl object-cover shadow-lg"
+          className="aspect-[4/5] min-w-0 max-w-sm flex-1 rounded-xl bg-neutral-900 object-contain shadow-lg transition-transform hover:scale-[1.03]"
           src={imagens[indice].src}
           alt={imagens[indice].alt}
         />

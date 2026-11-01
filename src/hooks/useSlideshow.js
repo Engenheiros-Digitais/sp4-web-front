@@ -1,6 +1,5 @@
 import { useState } from 'react';
 
-// Hook customizado com a lógica do slideshow (próxima / anterior)
 function useSlideshow(totalImagens) {
   const [indice, setIndice] = useState(0);
 

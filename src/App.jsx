@@ -14,16 +14,13 @@ function App() {
       <Header />
       <div className="flex-1">
       <Routes>
-        {/* Rotas públicas */}
         <Route path="/" element={<Home />} />
         <Route path="/funcionalidade/:nome" element={<Funcionalidade />} />
         <Route path="/login" element={<Login />} />
 
-        {/* Rotas privadas (precisa estar logado) */}
         <Route path="/painel" element={<RotaPrivada><Painel /></RotaPrivada>} />
         <Route path="/feedbacks" element={<RotaPrivada><Feedbacks /></RotaPrivada>} />
 
-        {/* Qualquer outra rota volta para a página inicial */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       </div>

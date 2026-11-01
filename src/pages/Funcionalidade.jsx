@@ -1,6 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
 
-// Conteúdo das antigas páginas Flash_CF.html, nuvem.html e AI_Foto.html
 const funcionalidades = {
   flash: {
     titulo: 'Flash Frontal',

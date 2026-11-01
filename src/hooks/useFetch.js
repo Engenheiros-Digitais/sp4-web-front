@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 
-// Hook customizado para buscar dados de uma API
 function useFetch(url) {
   const [dados, setDados] = useState([]);
   const [carregando, setCarregando] = useState(true);

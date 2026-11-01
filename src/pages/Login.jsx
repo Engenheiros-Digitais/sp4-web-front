@@ -5,10 +5,11 @@ import useAuth from '../hooks/useAuth';
 function Login() {
   const [nome, setNome] = useState('');
   const [senha, setSenha] = useState('');
+  const [confSenha, setConfSenha] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
 
-  // Validação do formulário (mesma regra da Sprint 3)
+  
   const handleLogin = (e) => {
     e.preventDefault();
     const nomeLimpo = nome.trim();
@@ -22,6 +23,11 @@ function Login() {
       alert('Erro: A senha precisa ter pelo menos 4 caracteres!');
       return;
     }
+
+    if (confSenha !== senha) {
+    alert("Erro: As senhas precisam ser iguais!");
+    return;
+  }
 
     const nomeFormatado = nomeLimpo.toUpperCase();
     login(nomeFormatado);
@@ -47,7 +53,14 @@ function Login() {
           onChange={(e) => setSenha(e.target.value)}
           className="rounded border border-gray-300 p-2"
         />
-        <button type="submit" className="rounded-full bg-jovi py-2 font-semibold text-white">
+        <input
+          type="password"
+          placeholder="Confirme a Senha"
+          value={confSenha}
+          onChange={(e) => setConfSenha(e.target.value)}
+          className="rounded border border-gray-300 p-2"
+        />
+        <button type="submit" className="rounded-full bg-jovi py-2 font-semibold text-white hover:scale-103 transition-transform">
           Entrar
         </button>
       </form>

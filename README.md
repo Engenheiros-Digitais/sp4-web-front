@@ -1,8 +1,8 @@
-# Sprint 4 - Front-End Design + Web Development (React)
+# SPRINT 4 - Front-End Design + Web Development
 
-## Sobre o projeto
+   ## Sobre o projeto
 
-Evolução do projeto JOVI Vision AI desenvolvido na Sprint 3. A Landing Page (HTML/CSS) foi integrada ao React, estilizada com Tailwind CSS e responsiva para Desktop, Tablet e Mobile.
+Evolução do projeto JOVI Vision AI desenvolvido na Sprint 3. A Landing Page (HTML/CSS) foi integrada ao React, estilizada com Tailwind CSS e é responsiva para Desktop, Tablet e Mobile.
 
 Nesta Sprint foram adicionados:
 
@@ -10,7 +10,7 @@ Nesta Sprint foram adicionados:
 - Hooks customizados para separar a lógica da parte visual.
 - Consumo de uma API mockada (MockAPI) para carregar os integrantes da equipe e enviar/listar feedbacks.
 
-## Tecnologias utilizadas
+   ## Tecnologias utilizadas
 
 - React
 - Vite
@@ -20,39 +20,34 @@ Nesta Sprint foram adicionados:
 - MockAPI
 - Vercel
 
-## Como instalar as dependências
+   ## Como instalar as dependências
 
 É necessário ter o Node.js instalado (versão 20.19 ou superior).
 
-Clone o repositório:
+Abra o Terminal Git Bash;
 
-```bash
-   git clone https://github.com/Engenheiros-Digitais/sp4-web-front.git
-```
+Clone o repositório: Entre na pasta do projeto: Instale as dependências. Utilizando os seguintes comandos;
 
-Entre na pasta do projeto:
+´´´´
+git clone https://github.com/Engenheiros-Digitais/sp4-web-front.git
 
-```bash
 cd sp4-web-front.git
-```
 
-Instale as dependências:
-
-```bash
 npm install
-```
+´´´´
 
-## Como executar o projeto
+
+   ## Como executar o projeto
 
 Após instalar as dependências, rode:
 
-```bash
+´´´´
 npm run dev
-```
+´´´´
 
-E abra no navegador o endereço mostrado no terminal (normalmente http://localhost:5173).
+E abra no navegador o endereço mostrado no terminal.
 
-## Back-end
+   ## Back-end
 
 O projeto não possui back-end próprio, então não é necessário executar nenhum servidor. Os dados são consumidos da MockAPI, que já está online. A URL da API fica no arquivo `src/services/api.js`.
 
@@ -62,15 +57,17 @@ Recursos usados na API:
 - `GET /feedbacks` — lista de feedbacks
 - `POST /feedbacks` — envio de um novo feedback
 
-## Usuários e senhas para teste
+   ## Usuários e senhas para teste
 
 As páginas Painel e Feedbacks são rotas privadas. Para acessar, faça login com:
 
-Usuário: Qualquer nome (ex: admin ou aluno)
+Usuário: Qualquer nome de sua preferência (ex: admin ou aluno)
 
 Senha: Qualquer senha com no mínimo 4 caracteres (ex: 1234)
 
-## Estrutura de pastas
+Confirme a Senha: Use a mesma senha utilizada no campo "Senha"
+
+   ## Estrutura de pastas
 
 - `src/components` — componentes da página (Header, Footer, FeatureCard, Galeria, Equipe...)
 - `src/pages` — páginas de cada rota (Home, Funcionalidade, Login, Painel, Feedbacks)
@@ -78,9 +75,9 @@ Senha: Qualquer senha com no mínimo 4 caracteres (ex: 1234)
 - `src/context` — contexto de autenticação
 - `src/services` — URL da API
 
-## Uso de Inteligência Artificial no projeto
+   ## Uso de Inteligência Artificial no projeto
 
-Neste projeto, a IA (Gemini, Claude) foi utilizada pontualmente como um copiloto de desenvolvimento e suporte técnico. A ferramenta foi consultada como uma documentação interativa para:
+Neste projeto, a IA (Gemini, Claude) foi utilizada pontualmente como um copiloto de desenvolvimento e suporte técnico. A ferramenta foi consultada como uma documentação para:
 
 - Esclarecer dúvidas sobre a configuração do Tailwind CSS e do React Router.
 - Consultar boas práticas na criação de hooks customizados e rotas privadas.
